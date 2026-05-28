@@ -1,16 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 
-const STEPS = ["consent", "spending", "financial", "loading", "result"];
-
-const CARD_IMAGES = {
-  "Freecharge Plus Credit Card": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png",
-  "Axis ACE Credit Card": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png",
-  "Axis Vistara Infinite Credit Card": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png",
-  "Axis MY Zone Credit Card": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png",
-  "Axis Fuel Credit Card": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png",
-};
-
 const CARD_COLORS = {
   "Freecharge Plus Credit Card": "#6C63FF",
   "Axis ACE Credit Card": "#E63946",
