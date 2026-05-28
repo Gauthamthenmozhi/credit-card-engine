@@ -41,6 +41,10 @@ def recommend(req: RecommendRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.get("/")
+def root():
+    return {"status": "ok"}
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
