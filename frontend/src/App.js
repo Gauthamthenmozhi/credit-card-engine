@@ -40,7 +40,7 @@ export default function App() {
       setResult(data);
       setStep("result");
     } catch (e) {
-      setError(e.message);
+      setError("The server is waking up. Please wait 30 seconds and try again.");
       setStep("financial");
     }
   };
@@ -192,6 +192,7 @@ function LoadingScreen() {
       <div className="spinner"></div>
       <h2>Analyzing your financial footprint...</h2>
       <p>Our AI is matching you to the best card</p>
+      <p style={{fontSize: "0.8rem", color: "#aaa", marginTop: "8px"}}>First load may take up to 60 seconds</p>
     </div>
   );
 }
