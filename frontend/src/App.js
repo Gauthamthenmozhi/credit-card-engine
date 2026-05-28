@@ -37,7 +37,7 @@ export default function App() {
     setStep("loading");
     setError("");
     try {
-      const res = await fetch("http://localhost:8000/recommend", {
+      const res = await fetch("https://credit-card-engine.onrender.com/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
